@@ -1,0 +1,82 @@
+{% extends "templates/web.html" %} {% block page_content %}
+
+<div style="max-width: 900px; margin: 30px auto; padding: 20px; font-family: Arial, sans-serif">
+	<h1 style="font-size: 28px; font-weight: 700; color: #1f2937; margin-bottom: 20px">
+		{{ make }} {{ model }} {{ year }}
+	</h1>
+
+	<div
+		style="
+			display: flex;
+			gap: 25px;
+			background: #e2effb;
+			padding: 20px;
+			border-radius: 14px;
+			border: 1px solid #e5e7eb;
+			box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+			flex-wrap: wrap;
+		"
+	>
+		<div style="flex: 1; min-width: 280px">
+			<img
+				src="{{ vehicle_image if vehicle_image else 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpyCXDLgQBT2liK5INRotGjCzD4IPdDgNbzg&s' }}"
+				alt="{{ make }} {{ model }}"
+				style="
+					width: 100%;
+					height: 320px; 
+					object-fit: cover;
+					border-radius: 12px;
+					border: 1px solid #e5e7eb;
+				"
+			/>
+		</div>
+
+		<div style="flex: 1; min-width: 280px; display: flex; flex-direction: column; gap: 12px">
+			<div>
+				<div style="font-size: 14px; color: #6b7280">Make</div>
+				<div style="font-size: 18px; font-weight: 600">{{ make }}</div>
+			</div>
+
+			<div>
+				<div style="font-size: 14px; color: #6b7280">Model</div>
+				<div style="font-size: 18px; font-weight: 600">{{ model }}</div>
+			</div>
+
+			<div>
+				<div style="font-size: 14px; color: #6b7280">Year</div>
+				<div style="font-size: 18px; font-weight: 600">{{ year }}</div>
+			</div>
+
+			{% if vehicle_type %}
+			<div>
+				<div style="font-size: 14px; color: #6b7280">Type</div>
+				<div style="font-size: 18px; font-weight: 600">{{ vehicle_type }}</div>
+			</div>
+			{% endif %} {% if docname %}
+			<div>
+				<div style="font-size: 14px; color: #6b7280">Reference ID</div>
+				<div style="font-size: 16px; font-weight: 500">{{ docname }}</div>
+			</div>
+			{% endif %}
+		</div>
+	</div>
+
+	<div
+		style="
+			margin-top: 25px;
+			padding: 15px;
+			background: #ffffff;
+			border: 1px solid #e5e7eb;
+			border-radius: 12px;
+		"
+	>
+		<h3 style="margin-bottom: 10px; font-size: 18px">About Vehicle</h3>
+		<p style="color: #6b7280; line-height: 1.6; margin: 0">
+			This vehicle listing contains all the key details including make, model, year, and
+			type. You can extend this section with service history, ownership details, or
+			specifications.
+		</p>
+	</div>
+</div>
+
+{% endblock %}

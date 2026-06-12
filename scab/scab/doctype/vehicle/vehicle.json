@@ -1,5 +1,6 @@
 {
  "actions": [],
+ "allow_guest_to_view": 1,
  "allow_rename": 1,
  "autoname": "V-.#####",
  "creation": "2026-06-11 09:57:09.916374",
@@ -9,6 +10,8 @@
   "vehicle_id",
   "model",
   "license_plate",
+  "is_available",
+  "route",
   "column_break_sste",
   "make",
   "year",
@@ -54,13 +57,26 @@
    "fieldname": "vehicle_image",
    "fieldtype": "Attach Image",
    "label": "Vehicle Image"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_available",
+   "fieldtype": "Check",
+   "label": "Is Available"
+  },
+  {
+   "fieldname": "route",
+   "fieldtype": "Data",
+   "label": "Route"
   }
  ],
  "grid_page_length": 50,
+ "has_web_view": 1,
  "image_field": "vehicle_image",
  "index_web_pages_for_search": 1,
+ "is_published_field": "is_available",
  "links": [],
- "modified": "2026-06-11 10:51:09.960595",
+ "modified": "2026-06-12 13:01:11.286225",
  "modified_by": "Administrator",
  "module": "SCab",
  "name": "Vehicle",
@@ -80,6 +96,7 @@
    "write": 1
   }
  ],
+ "route": "vehicles",
  "row_format": "Dynamic",
  "rows_threshold_for_grid_search": 20,
  "sort_field": "modified",
