@@ -1,0 +1,88 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "V-.#####",
+ "creation": "2026-06-11 09:57:09.916374",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "vehicle_id",
+  "model",
+  "license_plate",
+  "column_break_sste",
+  "make",
+  "year",
+  "vehicle_image"
+ ],
+ "fields": [
+  {
+   "fieldname": "vehicle_id",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Vehicle ID",
+   "reqd": 1
+  },
+  {
+   "fieldname": "model",
+   "fieldtype": "Data",
+   "label": "Model"
+  },
+  {
+   "fieldname": "license_plate",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "License Plate",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_sste",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "make",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Make",
+   "reqd": 1
+  },
+  {
+   "fieldname": "year",
+   "fieldtype": "Data",
+   "label": "Year"
+  },
+  {
+   "fieldname": "vehicle_image",
+   "fieldtype": "Attach Image",
+   "label": "Vehicle Image"
+  }
+ ],
+ "grid_page_length": 50,
+ "image_field": "vehicle_image",
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-06-11 10:51:09.960595",
+ "modified_by": "Administrator",
+ "module": "SCab",
+ "name": "Vehicle",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

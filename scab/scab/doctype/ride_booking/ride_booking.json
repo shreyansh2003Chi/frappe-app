@@ -1,0 +1,92 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-06-11 12:01:43.075436",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "ride_booking_details_section",
+  "customer_name",
+  "customer_contact",
+  "select_vehicle",
+  "booking_date",
+  "column_break_ebgo",
+  "status",
+  "pickup_address"
+ ],
+ "fields": [
+  {
+   "fieldname": "select_vehicle",
+   "fieldtype": "Link",
+   "label": "Select Vehicle",
+   "options": "Vehicle"
+  },
+  {
+   "fieldname": "column_break_ebgo",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "booking_date",
+   "fieldtype": "Datetime",
+   "in_list_view": 1,
+   "label": "Booking Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Accepted\nRejected\nPending"
+  },
+  {
+   "fieldname": "pickup_address",
+   "fieldtype": "Small Text",
+   "label": "Pickup Address",
+   "reqd": 1
+  },
+  {
+   "fieldname": "customer_name",
+   "fieldtype": "Data",
+   "label": "Customer Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "customer_contact",
+   "fieldtype": "Phone",
+   "label": "Customer Contact",
+   "reqd": 1
+  },
+  {
+   "fieldname": "ride_booking_details_section",
+   "fieldtype": "Section Break",
+   "label": "Ride Booking Details"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-06-11 14:55:33.335763",
+ "modified_by": "Administrator",
+ "module": "SCab",
+ "name": "Ride Booking",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
