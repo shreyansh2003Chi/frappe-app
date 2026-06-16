@@ -1,0 +1,44 @@
+[
+ {
+  "docstatus": 0,
+  "doctype": "Vehicle Type",
+  "modified": "2026-06-15 11:14:10.979328",
+  "name": "4 Seater",
+  "type_name": "4 Seater"
+ },
+ {
+  "docstatus": 0,  
+  "doctype": "Vehicle Type",
+  "modified": "2026-06-15 11:14:37.765990",
+  "name": "SUV",
+  "type_name": "SUV"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Vehicle Type",
+  "modified": "2026-06-15 11:14:45.908624",
+  "name": "XUV",
+  "type_name": "XUV"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Vehicle Type",
+  "modified": "2026-06-15 11:15:26.266215",
+  "name": "Sedan",
+  "type_name": "Sedan"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Vehicle Type",
+  "modified": "2026-06-15 11:15:35.992477",
+  "name": "Hatchback",
+  "type_name": "Hatchback"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Vehicle Type",
+  "modified": "2026-06-15 11:16:02.926522",
+  "name": "MUV",
+  "type_name": "MUV"
+ }
+]

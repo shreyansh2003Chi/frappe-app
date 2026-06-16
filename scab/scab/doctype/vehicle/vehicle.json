@@ -15,7 +15,8 @@
   "column_break_sste",
   "make",
   "year",
-  "vehicle_image"
+  "vehicle_image",
+  "type"
  ],
  "fields": [
   {
@@ -68,6 +69,12 @@
    "fieldname": "route",
    "fieldtype": "Data",
    "label": "Route"
+  },
+  {
+   "fieldname": "type",
+   "fieldtype": "Link",
+   "label": "Type",
+   "options": "Vehicle Type"
   }
  ],
  "grid_page_length": 50,
@@ -76,13 +83,24 @@
  "index_web_pages_for_search": 1,
  "is_published_field": "is_available",
  "links": [],
- "modified": "2026-06-12 13:01:11.286225",
+ "modified": "2026-06-15 11:13:30.147177",
  "modified_by": "Administrator",
  "module": "SCab",
  "name": "Vehicle",
  "naming_rule": "Expression",
  "owner": "Administrator",
  "permissions": [
+  {
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "if_owner": 1,
+   "print": 1,
+   "report": 1,
+   "role": "Event Manager",
+   "select": 1,
+   "share": 1
+  },
   {
    "create": 1,
    "delete": 1,
